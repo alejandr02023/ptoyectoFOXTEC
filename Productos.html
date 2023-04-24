@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Foxtec</title>
+	<meta name="description" content="Descripción de la aplicación web">
+	<meta name="keywords" content="palabras clave, separadas por comas">
+	<meta name="author" content="Tu nombre">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="MENU.css" />	
+	<link rel="stylesheet" href="Registro.css" />
+    <link rel="stylesheet" href="tienda.css" />
+	<link rel="stylesheet" href="pr.css">
+  <link rel="stylesheet" href="Redes.css.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<img src="IMG/Foxtec2.png" alt="">
+	</header>
+	<!-- Se incluye el menú -->
+    <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="pago.html">Pago</a></li>
+        <li><a href="Entrega.html">Entrega</a></li>
+      </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+	<main>
+		<section class="portafolio">
+            <div class="contenedor">
+             
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="IMG/CORE-I3.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="IMG/Foxtec2.png" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="IMG/laptop.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="IMG/Foxtec2.png" alt="">
+                           
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="IMG/CEL.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="IMG/Foxtec2.png" alt="">
+                           
+                        </div>
+                    </div>
+                  
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		  <!-- Se crean los botones de categoría -->
+		  <div class="button-container">
+        <button class="category-button" onclick="irAPaginaTienda('computadoras')">
+          Computadoras
+        </button>
+        <button class="category-button" onclick="irAPaginaTienda('portatiles')">
+          Portátiles
+        </button>
+        <button class="category-button" onclick="irAPaginaTienda('celulares')">
+          Celulares
+        </button>
+      </div>
+      
+		  
+	</main>
+  <br><br><br><br><br>
+  
+	<footer>
+		<div class="social-icons">
+      <div class="icon">
+        <svg height="80" width="80">
+          <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+        </svg>
+        <i class='bx bxl-instagram'></i>
+      </div>
+    
+      <div class="icon">
+        <svg height="80" width="80">
+          <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+        </svg>
+        <i class='bx bxl-facebook-circle'></i>
+      </div>
+    
+      <div class="icon">
+        <svg height="80" width="80">
+          <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+        </svg>
+        <i class='bx bxl-whatsapp'></i>
+      </div>
+    
+      <div class="icon">
+        <svg height="80" width="80">
+          <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+        </svg>
+        <i class='bx bxl-twitter'></i>
+      </div>
+    </div>
+    
+	</footer>
+  
+	<script src="productos.js"></script>
+</body>
+</html>

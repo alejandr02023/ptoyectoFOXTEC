@@ -1,0 +1,95 @@
+/* Estilos generales */
+
+/* Configuración del modelo de caja */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuración del fondo y la fuente del cuerpo */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat-y;
+}
+
+/* Configuración del encabezado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  background-color: rgb(9, 9, 68);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+}
+
+/* Configuración de la imagen */
+img {
+  max-width: 120%;
+  max-height: 60px;
+}
+
+/* Configuración del contenido principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+  padding: 20px;
+}
+
+/* Configuración del título */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Configuración del párrafo */
+p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Configuración del pie de página */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: transparent;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0);
+  font-size: 0.9em;
+  color: black;
+}
+
+/* Configuración del botón siguiente */
+.siguiente-btn {
+  background-color: #141150f0;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.siguiente-btn:hover {
+  background-color: #13a5e9;
+}
+
+.siguiente-btn:active {
+  background-color: #4caf50;
+  box-shadow: 0px 3px 0px #2e6b35;
+  transform: translateY(2px);
+}
+
+/* Configuración del título del producto */
+.producto h3 {
+  color: black;
+}

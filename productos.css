@@ -1,0 +1,250 @@
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  background-color: rgb(9, 9, 68);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+}
+
+.container {
+  width: 50%;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f8f8f9;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border: solid #090645 2px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(9, 2, 36, 0.8);
+}
+
+.elements {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.quadrate {
+  cursor: pointer;
+  height: 4px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: #717171;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 2px;
+}
+
+.active,
+.quadrate:hover {
+  background-color: #fff;
+}
+
+.myButton {
+  background-color: #040c2c; /* color de fondo */
+  border: none; /* eliminar borde */
+  color: white; /* color de texto */
+  padding: 100px 20px; /* espaciado del contenido */
+  text-align: center; /* centrar el contenido */
+  text-decoration: none; /* eliminar subrayado */
+  display: block; /* mostrar como bloque */
+  font-size: 18px; /* tamaño de fuente */
+  margin: auto; /* centrar horizontalmente */
+  margin-top: 20px;
+  border-radius: 50px; /* radio de esquinas */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* sombra */
+  transition: all 0.3s ease 0s; /* transición */
+  cursor: pointer; /* cursor de señalador */
+}
+
+.myButton:hover {
+  background-color: #1873d2; /* color de fondo al pasar el cursor */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); /* sombra al pasar el cursor */
+  transform: translateY(-5px); /* animación al pasar el cursor */
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.container {
+  margin: 0 auto; /* Centro el contenedor horizontalmente */
+  max-width: 100%; /* Hago el slider responsive */
+  position: relative;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 1em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  z-index: 2;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.elements {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.quadrate {
+  width: 1em;
+  height: 1em;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.quadrate:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.active {
+  background-color: #fff;
+}
+
+.myButton {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #09094b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 100%; /* Hago el slider responsive */
+  }
+}
+.container {
+  margin-top: 50px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.category-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.category-button {
+  background-color: #0b083a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	background-color: transparent;
+	box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.0);
+	font-size: 0.9em;
+	color: black;
+}
+
+

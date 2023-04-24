@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MENU.css" />
+    <link rel="stylesheet" href="Registro.css" />
+    <link rel="stylesheet" href="tienda.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="form.html">Registro</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="pago.html">Pago</a></li>
+        <li><a href="Entrega.html">Entrega</a></li>
+      </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <br /><br />
+    <div class="image-container">
+      <img src="IMG/Foxtec2.png" alt="Foxtec2 Logo" />
+    </div>
+
+    <main id="main">
+      <div class="product-container">
+        <div class="product-details">
+          <div class="product-image">
+            <img src="IMG/CEL.png" alt="PC Lenovo" />
+          </div>
+
+          <div class="product-info">
+            <div class="price">$1.750.000</div>
+            <h2>Xiaomi</h2>
+            <p>Xiaomi Redmi Note 11 Pro</p>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <input type="number" min="1" max="10" value="1" />
+              <button class="plus">+</button>
+            </div>
+
+            <button class="add-to-cart" id="btn-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="productos.js"></script>
+  </body>
+</html>

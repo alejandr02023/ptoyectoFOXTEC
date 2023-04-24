@@ -1,0 +1,75 @@
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: rgb(20, 14, 70);
+    box-shadow:  0 0 20px white;
+}
+
+.icon:hover:nth-child(2) {
+    background-color:  rgb(20, 14, 70);
+    box-shadow:  0 0 20px white;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: rgb(20, 14, 70);
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color:  rgb(20, 14, 70);
+    box-shadow:  0 0 20px white ;
+}
+
+.icon i {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem; /* ajusta el valor para cambiar el tamaño */
+}
+
+svg circle {
+    stroke-dasharray: 80;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 00;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons .icon:hover {
+    transform: scale(1.0);
+  }
+  
+  .social-icons .icon svg {
+    margin-bottom: 10px;
+  }
+  .icon-container {
+    margin-bottom: 0px;
+  }

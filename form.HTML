@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MENU.css" />
+    <link rel="stylesheet" href="Registro.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="form.html">Registro</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="pago.html">Pago</a></li>
+        <li><a href="Entrega.html">Entrega</a></li>
+      </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <main id="main">
+      <form action="#" method="POST">
+        <img src="IMG/Foxtec2.png" alt="" />
+        
+        <div class="form-group">
+          <input type="text" placeholder="Ingrese su nombre" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Ingrese su Apellido" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Ingrese su Correo" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Ingrese su contraseña" />
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="agree" required />
+            Estoy de acuerdo con términos y condiciones
+          </label>
+        </div>
+
+        <button
+          onclick="Registrarse()"
+          style="
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            background-color: #0e0a69;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          "
+        >
+          Registrarse
+        </button>
+
+        <div class="form-group">
+          <br />
+          <p class="link"><a href="form2.html">¿Ya tienes cuenta?</a></p>
+        </div>
+      </form>
+    </main>
+
+    <footer></footer>
+
+    <script src="productos.js"></script>
+  </body>
+</html>

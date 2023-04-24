@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Foxtec</title>
+    <meta name="description" content="Descripción de la aplicación web" />
+    <meta name="keywords" content="palabras clave, separadas por comas" />
+    <meta name="author" content="Tu nombre" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="pago.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <br /><br />
+      <img src="IMG/Foxtec2.png" alt="" />
+    </header>
+    <br /><br /><br /><br /><br />
+    <main>
+      <h1>Datos de Entrega</h1>
+      <form action="compra-finalizada.html" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre completo"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            placeholder="Ingresa tu dirección completa"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="ciudad">Ciudad</label>
+          <input
+            type="text"
+            id="ciudad"
+            name="ciudad"
+            placeholder="Ingresa tu ciudad"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="estado">Estado</label>
+          <input
+            type="text"
+            id="estado"
+            name="estado"
+            placeholder="Ingresa tu estado"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pais">País</label>
+          <input
+            type="text"
+            id="pais"
+            name="pais"
+            placeholder="Ingresa tu país"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Ingresa tu teléfono"
+            required
+          />
+        </div>
+        <br />
+
+        <button type="submit" class="btn" onclick="mostrarCargando()">
+          Enviar
+        </button>
+        <img
+          id="loading-img"
+          src="IMG/cargando-loading.gif"
+          alt="Cargando..."
+          style="display: none"
+        />
+
+        <script>
+          function mostrarCargando() {
+            var boton = document.querySelector(".btn");
+            var imagen = document.querySelector("#loading-img");
+
+            boton.style.display = "none";
+            imagen.style.display = "block";
+          }
+        </script>
+      </form>
+    </main>
+    <br /><br /><br />
+    <footer>
+      <p>© 2023 FOXTEC INGENIER</p>
+    </footer>
+    <script src="pago.js"></script>
+  </body>
+</html>
